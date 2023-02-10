@@ -13,4 +13,4 @@ This is the second project of the Web Development program at Practicum. It was c
 
 ## Plan on improving the project
 
-Add your ideas here :)
+Overall, I feel like the difficulty of this project was spot on and challenged me. But it wasn't too hard. It leaves enough out that it makes me figure things out on my own. Only idea is have is that there could have been more direction on the menu part where you have to add lines between the item and price. That one was confusing.
