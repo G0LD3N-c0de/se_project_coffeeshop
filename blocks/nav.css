@@ -1,0 +1,40 @@
+.nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav__logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.nav__links {
+  display: flex;
+  list-style-type: none;
+  margin: 30px 0 0 0;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.nav__link {
+  margin-right: 20px;
+  transition: color 0.2s linear;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 500;
+}
+
+.nav__link:last-of-type {
+  margin: 0;
+}
+
+.nav__link-anchor {
+  color: black;
+  text-decoration: none;
+  font-family: "inter", arial, sans-serif;
+  transition: color 0.2s linear;
+}
+
+.nav__link-anchor:hover {
+  color: #2f80ed;
+}

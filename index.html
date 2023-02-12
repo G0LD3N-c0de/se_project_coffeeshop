@@ -27,12 +27,12 @@
   <body>
     <div class="page">
       <header class="header">
+        <img
+          class="logo nav__logo"
+          src="./images/logo_coffee_shop.svg"
+          alt="Coffee Shop Logo"
+        />
         <nav class="nav">
-          <img
-            class="logo nav__logo"
-            src="./images/logo_coffee_shop.svg"
-            alt="Coffee Shop Logo"
-          />
           <ul class="nav__links">
             <li class="nav__link">
               <a class="nav__link-anchor" href="#menu">Menu</a>
@@ -44,7 +44,10 @@
               <a class="nav__link-anchor" href="#reservation">Book a table</a>
             </li>
             <li class="nav__link">
-              <a class="nav__link-anchor" href="#about">Contacts</a>
+              <a class="nav__link-anchor" href="#about">About</a>
+            </li>
+            <li class="nav__link">
+              <a class="nav__link-anchor" href="#contacts">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -61,13 +64,13 @@
           src="./images/inside_coffee_shop.png"
           alt="Practicum cafe"
         />
-        <div class="header__paragraph">
+        <div class="header__footer">
           <div class="header__hours">
-            <p class="header__hours-item">Hours:</p>
-            <p class="header__hours-item">Monday - Friday (10:00 - 19:00)</p>
-            <p class="header__hours-item">Saturday - Sunday (11:00 - 18:00)</p>
+            <p class="header__paragraph">Hours:</p>
+            <p class="header__paragraph">Monday - Friday (10:00 - 19:00)</p>
+            <p class="header__paragraph">Saturday - Sunday (11:00 - 18:00)</p>
           </div>
-          <p class="header__address">
+          <p class="header__paragraph">
             200 Success Avenue, The Town of Practicum
           </p>
         </div>
@@ -149,8 +152,6 @@
           <div class="recipes__videos">
             <div class="recipes__video">
               <iframe
-                width="560"
-                height="315"
                 src="https://www.youtube.com/embed/j6VlT_jUVPc"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -164,8 +165,6 @@
             </div>
             <div class="recipes__video">
               <iframe
-                width="560"
-                height="315"
                 src="https://www.youtube.com/embed/st571DYYTR8"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -193,8 +192,6 @@
                 placeholder="Name Surname"
                 required
               />
-            </fieldset>
-            <fieldset class="form__fieldset">
               <label for="form__number-of-guests" class="form__label"
                 >Number of guests*</label
               >
@@ -207,8 +204,6 @@
                 placeholder="1-8"
                 required
               />
-            </fieldset>
-            <fieldset class="form__fieldset">
               <label for="form__datetime-local" class="form__label"
                 >Date & time *</label
               >
@@ -218,8 +213,6 @@
                 id="form__datetime-local"
                 required
               />
-            </fieldset>
-            <fieldset class="form__fieldset">
               <label for="form__email" class="form__label">Your email *</label>
               <input
                 type="email"
@@ -229,38 +222,42 @@
                 required
               />
             </fieldset>
-            <fieldset class="form__fieldset">
-              <button class="form__button">Book a table</button>
-            </fieldset>
-            <fieldset class="form__fieldset">
-              <input type="checkbox" class="form__checkbox" required />
-              <p class="form__checkbox-statement">
-                I agree with the terms and conditions
-              </p>
-            </fieldset>
+            <button class="form__button">Book a table</button>
+            <label
+              for="form__checkbox"
+              class="form__label form__label-checkbox"
+            >
+              <input
+                id="form__checkbox"
+                type="checkbox"
+                class="form__checkbox"
+                required
+              />
+              I agree with the terms and conditions
+            </label>
           </form>
         </section>
         <section class="about" id="about">
-          <div class="about__flex-container">
-            <h2 class="about__title">About the coffee shop</h2>
-            <div class="about__content">
-              <p class="about__paragraph">
-                Our coffee shop is located in the Practicum Library's hall. It
-                features 6 tables and free WiFi.
-                <span class="about__paragraph-break">
-                  Our main mission is keeping guests cozy and energized.
-                </span>
-                Besides that, we try to reduce our environmental impact — so we
-                don't sell single-use cups. But you can buy one of our reusable
-                cups!
-              </p>
-            </div>
+          <h2 class="about__title">About the coffee shop</h2>
+          <div class="about__content">
+            <p class="about__paragraph">
+              Our coffee shop is located in the Practicum Library's hall. It
+              features 6 tables and free WiFi.
+            </p>
+            <p class="about__paragraph">
+              Our main mission is keeping guests cozy and energized.
+            </p>
+            <p class="about__paragraph">
+              Besides that, we try to reduce our environmental impact — so we
+              don't sell single-use cups. But you can buy one of our reusable
+              cups!
+            </p>
           </div>
           <div class="about__circle"></div>
           <div class="about__circle about__circle_animation_blurred"></div>
         </section>
       </main>
-      <footer class="footer">
+      <footer class="footer" id="contacts">
         <div class="footer__content">
           <img
             src="./images/practicum_logo.svg"
@@ -268,7 +265,7 @@
             class="footer__logo"
           />
           <ul class="footer__list">
-            <li class="footer__social-heading">Social Media</li>
+            <p class="footer__social-heading">Social Media</p>
             <li class="footer__list-item">
               <img
                 src="./images/facebook_white.svg"
